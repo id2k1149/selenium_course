@@ -48,7 +48,9 @@ try:
     # ввод текста окно
     prompt = browser.switch_to.alert
     prompt.send_keys("My answer")
+    time.sleep(10)
     prompt.accept()
+    time.sleep(10)
 
 finally:
     time.sleep(5)
