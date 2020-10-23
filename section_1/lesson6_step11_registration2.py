@@ -1,11 +1,12 @@
 from selenium import webdriver
 import time
 
-try:
-    link = "http://suninjuly.github.io/registration2.html"
-    browser = webdriver.Chrome()
-    browser.get(link)
+link = "http://suninjuly.github.io/registration2.html"
+browser = webdriver.Chrome()
 
+try:
+
+    browser.get(link)
     # Ваш код, который заполняет обязательные поля
     input1 = browser.find_element_by_xpath('//input[contains(@class, "first") and @required]')
     input1.send_keys("test")

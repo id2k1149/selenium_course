@@ -2,9 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
+link = "http://google.com"
+browser = webdriver.Chrome()
+
 try:
-    link = "http://google.com"
-    browser = webdriver.Chrome()
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля

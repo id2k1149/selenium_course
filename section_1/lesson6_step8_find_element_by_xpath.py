@@ -2,10 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
+browser = webdriver.Chrome()
 link = "http://suninjuly.github.io/find_xpath_form"
 
 try:
-    browser = webdriver.Chrome()
     browser.get(link)
 
     input1 = browser.find_element_by_tag_name("input")
@@ -20,7 +20,7 @@ try:
     button.click()
 
 finally:
-    # успеваем скопировать код за 30 секунд
-    time.sleep(30)
+    # успеваем скопировать код за 5 секунд
+    time.sleep(5)
     # закрываем браузер после всех манипуляций
     browser.quit()
