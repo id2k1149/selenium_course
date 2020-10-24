@@ -2,12 +2,11 @@ from selenium import webdriver
 import time
 import os
 
+link = "http://suninjuly.github.io/file_input.html"
+browser = webdriver.Chrome()
+browser.get(link)
 
 try:
-    link = "http://suninjuly.github.io/file_input.html"
-    browser = webdriver.Chrome()
-    browser.get(link)
-
     # Заполнить текстовые поля: имя, фамилия, email
     input1 = browser.find_element_by_name("firstname")
     input1.send_keys("test")

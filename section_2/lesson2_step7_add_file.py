@@ -1,3 +1,4 @@
+# модуль Python для работы с операционной системой — os
 import os
 from selenium import webdriver
 

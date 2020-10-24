@@ -1,9 +1,9 @@
 from selenium import webdriver
 import time
 
+browser = webdriver.Chrome()
 try:
     link = "http://suninjuly.github.io/registration1.html"
-    browser = webdriver.Chrome()
     browser.get(link)
 
     input1 = browser.find_element_by_xpath("/html/body/div/form/div[1]/div[1]/input")
@@ -13,12 +13,9 @@ try:
     input3 = browser.find_element_by_xpath("/html/body/div/form/div[1]/div[3]/input")
     input3.send_keys("123")
 
+    # Отправляем заполненную форму
     button = browser.find_element_by_class_name("btn.btn-default")
     button.click()
-    # Ваш код, который заполняет обязательные поля
-    ...
-
-    # Отправляем заполненную форму
 
     # Проверяем, что смогли зарегистрироваться
     # ждем загрузки страницы

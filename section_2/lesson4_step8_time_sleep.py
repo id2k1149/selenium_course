@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+# Задание явных ожиданий реализуется
+# с помощью инструментов WebDriverWait и expected_conditions.
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
@@ -19,7 +21,7 @@ try:
     # говорим Selenium проверять в течение 12 секунд,
     # пока цена станет 100
     our_price = WebDriverWait(browser, 12).\
-        until(EC.text_to_be_present_in_element((By.ID, "price"),"$100"))
+        until(EC.text_to_be_present_in_element((By.ID, "price"), "$100"))
 
     button = browser.find_element_by_id("book")
     button.click()

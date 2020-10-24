@@ -1,11 +1,10 @@
 from selenium import webdriver
 import time
 
+browser = webdriver.Chrome()
+link = "google.com"
+browser.get(link)
 try:
-    browser = webdriver.Chrome()
-    link = "google.com"
-    browser.get(link)
-
     assert abs(-42) == -42, "Should be absolute value of a number"
 
     # Функция is_element_present() вспомогательная.

@@ -2,11 +2,11 @@ from selenium import webdriver
 import time
 from selenium.webdriver.support.ui import Select
 
-try:
-    link = "http://suninjuly.github.io/selects1.html"
-    browser = webdriver.Chrome()
-    browser.get(link)
+link = "http://suninjuly.github.io/selects1.html"
+browser = webdriver.Chrome()
+browser.get(link)
 
+try:
     # Найти element1 + element2
     element1 = browser.find_element_by_id("num1")
     element2 = browser.find_element_by_id("num2")
@@ -31,4 +31,3 @@ finally:
     time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
-    

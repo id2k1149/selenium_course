@@ -22,6 +22,11 @@ try:
     # получить текст из alert
     alert = browser.switch_to.alert
     alert_text = alert.text
+    # Другой вариант модального окна,
+    # который предлагает пользователю выбор согласиться с сообщением
+    # или отказаться от него, называется confirm.
+    # Для переключения на окно confirm используется та же команда,
+    # что и в случае с alert:
     alert = browser.switch_to.alert
     alert.accept()
 

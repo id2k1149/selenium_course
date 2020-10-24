@@ -7,11 +7,11 @@ def calc(xx):
     return str(math.log(abs(12*math.sin(int(xx)))))
 
 
-try:
-    link = "http://suninjuly.github.io/math.html"
-    browser = webdriver.Chrome()
-    browser.get(link)
+link = "http://suninjuly.github.io/math.html"
+browser = webdriver.Chrome()
 
+try:
+    browser.get(link)
     # Считать значение для переменной x
     x_element = browser.find_element_by_id("input_value")
     x = x_element.text

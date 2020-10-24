@@ -1,5 +1,7 @@
 import time
 from selenium.webdriver.common.by import By
+# Задание явных ожиданий реализуется
+# с помощью инструментов WebDriverWait и expected_conditions.
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
@@ -16,8 +18,8 @@ try:
     button = WebDriverWait(browser, 5).\
         until(EC.element_to_be_clickable((By.ID, "verify")))
 
-    # говорим Selenium проверять в течение 5 секунд
-    # пока кнопка станет неактивной
+    # Если мы захотим проверять, что кнопка становится неактивной после отправки данных,
+    # то можно задать негативное правило с помощью метода until_not:
 
     # button = WebDriverWait(browser, 5).until_not(
     #     EC.element_to_be_clickable((By.ID, "verify"))

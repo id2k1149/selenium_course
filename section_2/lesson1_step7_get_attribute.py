@@ -7,11 +7,11 @@ def calc(xx):
     return str(math.log(abs(12*math.sin(int(xx)))))
 
 
-try:
-    link = "http://suninjuly.github.io/get_attribute.html"
-    browser = webdriver.Chrome()
-    browser.get(link)
+link = "http://suninjuly.github.io/get_attribute.html"
+browser = webdriver.Chrome()
+browser.get(link)
 
+try:
     # Найти картинку сундука с сокровищами
     chest_element = browser.find_element_by_id("treasure")
 
