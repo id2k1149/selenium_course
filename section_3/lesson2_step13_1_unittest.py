@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 
 
-class TestAbs(unittest.TestCase):
+class TestLinks(unittest.TestCase):
 
     def test_link_1(self):
         browser = webdriver.Chrome()
@@ -78,3 +78,6 @@ class TestAbs(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# cd section_3
+# python lesson2_step13_1_unittest.py

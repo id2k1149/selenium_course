@@ -36,3 +36,5 @@ class TestReg(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# pytest -v lesson2_step13_2.py

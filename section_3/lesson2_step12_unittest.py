@@ -11,3 +11,6 @@ class TestAbs(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# cd section_3
+# python lesson2_step12_unittest.py
