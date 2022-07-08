@@ -1,11 +1,17 @@
 from selenium import webdriver
 import time
 
-try: 
+browser = webdriver.Chrome()
+
+try:
+    # Тест успешно проходит на странице
     link1 = "http://suninjuly.github.io/registration1.html"
+
+    # Тест падает с ошибкой NoSuchElementException
     link2 = "http://suninjuly.github.io/registration2.html"
-    browser = webdriver.Chrome()
-    browser.get(link2)
+
+    browser.get(link1)
+    # browser.get(link2)
 
     # Ваш код, который заполняет обязательные поля
     first_name = browser.find_element_by_xpath("//label[text()='First name*']/..//input")
