@@ -1,5 +1,5 @@
 # selenium_course
-Автоматизация тестирования с помощью Selenium и Python.
+Автоматизация тестирования с помощью Selenium и Python.https://stepik.org
 
 Пройдено 2 раздела - 
 
